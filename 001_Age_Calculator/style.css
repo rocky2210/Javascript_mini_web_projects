@@ -1,0 +1,115 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu Mono', monospace !important;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color:#21222c !important;
+}
+
+.container{
+    width: calc(100% - 40px);
+    max-width: 450px;
+    margin: 15px;
+}
+
+.calc__header{
+    color: #8aff80;
+    margin-bottom: 20px;
+    font-size: 300% !important;
+    animation-delay: 2s;
+}
+.calc__header i{
+    color: #ff5555;
+}
+
+.container__input{
+    background-color: #21222c;
+    padding: 20px;
+    border: 1px solid #9580ff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 8fr;
+    gap: 1em;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container__input,
+.container__input button{
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.container__input input{
+    background-color: #eeeeff;
+    color: #0f172a;
+    padding: 1.2em 1.25em;
+}
+
+.btn-primary{
+    background-color: rgba(255,202,128,0.9) !important;
+    color: #0f172a !important;
+}
+
+.container__input button{
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container__output{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__output div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #9580ff;
+    font-size: 1.6rem;
+    border-radius: 10px ;
+    background-color: #21222c;
+    color: #b9e0f2;
+    display: grid;
+    place-items: center;
+    padding: 1.25em 0;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container__output span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.container__output p {
+    font-size: 1.3rem;
+}
+
+.calc__footer{
+    color: #eeeeff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
