@@ -26,13 +26,13 @@ body{
     width: calc(100% - 40px);
     max-width: 450px;
     margin: 15px;
+    animation-delay: 0.5s;
 }
 
 .calc__header{
     color: #8aff80;
     margin-bottom: 20px;
     font-size: 300% !important;
-    animation-delay: 1s;
 }
 .calc__header i{
     color: #ff5555;
