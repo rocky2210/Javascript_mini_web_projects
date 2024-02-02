@@ -5,7 +5,6 @@ const gender = document.getElementById("floatingGender");
 const password = document.getElementById("floatingPassword");
 const registration = document.getElementById("registrationForm");
 
-
 function validateForm(event){
     
     let isValid = true;
@@ -68,8 +67,7 @@ function showError(element){
     element.classList.add('animate__animated', 'animate__shakeX');
     setTimeout(() => {
         element.classList.remove('animate__animated', 'animate__headShake');
-    },1000);
+    },130);
 }
-
 
 registration.addEventListener("submit",validateForm);

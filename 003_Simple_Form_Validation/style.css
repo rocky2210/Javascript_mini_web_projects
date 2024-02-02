@@ -5,14 +5,19 @@
     --body-font:  'Ubuntu', sans-serif !important;
 }
 
-:root {
-    --bs-body-bg: #000000;
-}
-
 html,
 body{
     height: 100%;
     font-family: var(--body-font);
+}
+
+.bg-body-tertiary{
+    background-color: hsl(0 0% 6%) !important;
+}
+
+.form-control::placeholder{
+    color:  rgb(145, 142, 142) !important;
+    opacity: 10 !important;
 }
 
 .form-signin{
@@ -41,6 +46,7 @@ button {
     color: white;
     border-radius: 4px;
 }
+
 button:hover {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
@@ -50,18 +56,17 @@ button:active {
     transform: translate(0em, 0.2em);
 }
 
-
 /* Media query for small devices (phones) */
 @media only screen and (max-width: 576px) {
     span{
-        font-size: 13.5px;
+        font-size: 12.5px;
     }
 }
 
 /* Media query for medium devices (tablets) */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     span{
-        font-size: 13.5px;
+        font-size: 12.5px;
     }
 }
 
