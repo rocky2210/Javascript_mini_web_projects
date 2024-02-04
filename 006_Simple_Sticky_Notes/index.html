@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes 📝</title>
+    <!-- Css -->
+        <!-- Bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- Custom css -->
+        <link rel="stylesheet" href="style.css">
+            
+        <!-- Animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Model -->
+    <div id="modal">
+        <div id="inner-modal">
+            <div class=" textarea-container">
+                <textarea  class="border border-success border-2" placeholder="Note..." id="user-input" maxlength="150"></textarea>
+                <button class="btn btn-warning mb-2" id="add-note-button">Add Note</button>
+                <i class="bi bi-x-circle" id="hide"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <header class="container">
+            <div id="header">
+                <h1 class="mb-5">Sticky note</h1>
+                <button class="btn btn-outline-primary mb-1" id="add-note">New note</button>
+                <button class="btn btn-outline-danger mb-2" id="clear-all-button">Clear All</button>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div id="all-notes"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
