@@ -1,0 +1,87 @@
+@font-face {
+    font-family: MainFont;
+    src: url(../font/angrybirds-regular.ttf);
+}
+// Variables
+$primary-color: rgba(0, 0, 0, 0.4);
+$background-color: black;
+$icon-color: #fff;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: MainFont;
+}
+
+
+/*  ============== Calculator ==============  */
+.calculator{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    padding: 20px;
+    max-width: 350px;
+    background: $primary-color;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    // result input styles
+    #result{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 24px;
+        text-align: right;
+        background-color: #000000;
+    }
+
+    // Grid layout for buttons
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+    }
+}
+
+/*  ============== Buttons ==============  */
+buttons {
+    padding: 15px;
+    font-size: 20px;
+    background-color: $primary-color;
+    border: none;
+    color: $icon-color;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    // Hover effect
+    &:hover{
+        color: purple;
+        background-color: $background-color;
+    }
+
+    // Active effect
+    &:active{
+        transform: translateY(2px);
+    }
+}
+
+
+/*  ============== heading ==============  */
+
+h1{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    // background: linear-gradient(45deg, cyan, yellow);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: #99F2C8;
+}
+
+
