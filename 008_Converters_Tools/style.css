@@ -1,0 +1,49 @@
+
+:root{
+    --text-bg-pink : #d63384;
+    --text-bg-indigo:  #6610f2;
+    --text-bg-orange: #fd7e14;
+    --text-bg-purple: #6f42c1;
+    --text-bg-teal: #20c997;
+    --text-bg-cyan: #ffc107;
+}
+
+body{
+    background: #232526 !important;  
+background: -webkit-linear-gradient(to right, #414345, #232526) !important;  
+background: linear-gradient(to right, #414345, #232526) !important; 
+}
+
+/* header{
+    background: #232526 !important; 
+    background: -webkit-linear-gradient(to right, #414345, #232526) !important;  
+    background: linear-gradient(to right, #414345, #232526) !important; 
+} */
+
+.calc__footer{
+    color: #eeeeff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-bg-pink{
+    background-color: var(--text-bg-pink);
+}
+
+.text-bg-indigo{
+    background-color: var(--text-bg-indigo);
+}
+
+.text-bg-purple{
+    background-color: var(--text-bg-purple);
+}
+
+.text-bg-orange{
+    background-color: var(--text-bg-orange);
+}
+
+.text-bg-teal{
+    background-color: var(--text-bg-teal);
+}
+
