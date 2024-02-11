@@ -30,6 +30,8 @@ function convertDigital(){
             convertedDigital = numericDigital / (1024 * 1024 * 1024 * 1024);
         }else if(toUnit === 'petabyte'){
             convertedDigital = numericDigital / (1024 * 1024 * 1024 * 1024 * 1024);
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8;
         }else{
             convertedDigital = numericDigital;
         }
@@ -44,6 +46,8 @@ function convertDigital(){
             convertedDigital = numericDigital / (1024 * 1024 * 1024);
         }else if(toUnit === 'petabyte'){
             convertedDigital = numericDigital / (1024 * 1024 * 1024 * 1024);
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8;
         }else{
             convertedDigital = numericDigital;
         }
@@ -58,6 +62,8 @@ function convertDigital(){
             convertedDigital = numericDigital / (1024 * 1024);
         }else if(toUnit === 'petabyte'){
             convertedDigital = numericDigital / (1024 * 1024 * 1024);
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8;
         }else{
             convertedDigital = numericDigital;
         }
@@ -72,6 +78,8 @@ function convertDigital(){
             convertedDigital = numericDigital / 1024;
         }else if(toUnit === 'petabyte'){
             convertedDigital = numericDigital / (1024 * 1024);
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8;
         }else{
             convertedDigital = numericDigital;
         }
@@ -86,6 +94,8 @@ function convertDigital(){
             convertedDigital = numericDigital * 1024;
         }else if(toUnit === 'petabyte'){
             convertedDigital = numericDigital / 1024;
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8;
         }else{
             convertedDigital = numericDigital;
         }
@@ -100,12 +110,30 @@ function convertDigital(){
             convertedDigital = numericDigital * (1024 * 1024);
         }else if(toUnit === 'terabyte'){
             convertedDigital = numericDigital * 1024;
+        }else if (toUnit === 'bit') {
+            convertedDigital = numericDigital * 8192;
         }else{
+            convertedDigital = numericDigital;
+        }
+    }else if (fromUnit === 'bit') {
+        if (toUnit === 'byte') {
+            convertedDigital = numericDigital / 8;
+        } else if (toUnit === 'kilobyte') {
+            convertedDigital = numericDigital / (8 * 1024);
+        } else if (toUnit === 'megabyte') {
+            convertedDigital = numericDigital / (8 * 1024 * 1024);
+        } else if (toUnit === 'gigabyte') {
+            convertedDigital = numericDigital / (8 * 1024 * 1024 * 1024);
+        } else if (toUnit === 'terabyte') {
+            convertedDigital = numericDigital / (8 * 1024 * 1024 * 1024 * 1024);
+        } else if (toUnit === 'petabyte') {
+            convertedDigital = numericDigital / (8 * 1024 * 1024 * 1024 * 1024 * 1024);
+        } else {
             convertedDigital = numericDigital;
         }
     }else{
         convertedDigital = numericDigital;
     }
 
-    document.getElementById('second-input').value = convertedDigital.toFixed(2) ;
+    document.getElementById('second-input').value = parseInt(convertedDigital);
 }
