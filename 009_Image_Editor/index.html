@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor 📸</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <!-- Image display -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main__display p-4 rounded">
+                        <!-- Heading -->
+                        <h1 class="main__title text-center">IMAGE EDITOR 📸</h1>
+
+                        <!-- Image display -->
+                        <canvas id="canvas" class="viewport img-fluid border mb-4"></canvas>
+
+                        <!-- Buttons -->
+                        <div class="button__row mt-4 ">
+                            <label class=" file__upload">
+                                <input type="file" id="imageLoader" name="imageLoader" value="upload image" accept="image/*">
+                                <span><i class="bi bi-file-earmark-arrow-up-fill"></i>Upload image</span>
+                            </label>
+                            <button id="download-button" class="download__button btn btn-primary mt-3"><i class="bi bi-file-earmark-arrow-down-fill"></i>Download</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools container -->
+                <div class="col-lg-4">
+                    <div id="tools-container" class="right__container disabled">
+                        <div class="row g-3">
+
+                            <!-- Brightness -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="bright-toggle">
+                                            <label class="form-check-label" for="bright-toggle">Brightness</label>
+                                        </div>
+                                        <input type="range" min="0" max="1" step="0.01" id="bright-range" class="form-range range-small">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Greyscale -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="grey-toggle">
+                                            <label class="form-check-label" for="grey-toggle">GreyScale</label>
+                                        </div>
+                                        <input type="range" min="0" max="3" step="0.3" id="grey-range" class="form-range range-small">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Contrast -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="contrast-toggle">
+                                            <label class="form-check-label" for="contrast-toggle">Contrast</label>
+                                        </div>
+                                        <input type="range" min="-100" max="100" step="1" id="contrast-range" class="form-range range-small">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Saturation -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="saturation-toggle">
+                                            <label class="form-check-label" for="saturation-toggle">Saturation</label>
+                                        </div>
+                                        <input type="range" min="0" max="2" step="0.01" id="saturation-range" class="form-range range-small">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Invert -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="invert-toggle">
+                                            <label class="form-check-label" for="invert-toggle">Invert</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Black and white -->
+                            <div class="col-md-6">
+                                <div class="card tools h-100">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="bw-toggle">
+                                            <label class="form-check-label" for="bw-toggle">Black and white</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more tool cards 👇🏻 -->
+                        </div>
+                    </div>
+                    <!-- Reset button -->
+                    <div class="reset mt-3 text-center">
+                        <h4><a id="reset" class="btn btn-danger mt-3 " type="button">Reset all values</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
