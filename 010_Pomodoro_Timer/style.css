@@ -1,0 +1,64 @@
+
+/* Root colors */
+:root{
+    --text-bg-pink : #d63384;
+    --text-bg-indigo:  #6610f2;
+    --text-bg-orange: #fd7e14;
+    --text-bg-purple: #6f42c1;
+    --text-bg-teal: #20c997;
+    --text-bg-cyan: #0dcaf0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container__custom{
+    max-width: 600px !important;
+}
+
+#clock {
+    background-color: #272b30;
+}
+
+.fa {
+    color: var(--text-bg-purple);
+}
+
+.fa:hover{
+    color: #4527A0;
+}
+
+.fb{
+    color: var(--text-bg-teal);
+}
+.fb:hover{
+    color: #009688;
+}
+
+.fc{
+    color: var(--text-bg-orange);
+}
+
+.fc:hover{
+    color: #EF6C00;
+}
+
+#break-length,#session-length{
+    color: #d63384;
+}
+
+#time-left{
+    color: #00B0FF !important;
+
+}
+
+.modal__animation {
+    --animate-duration: 0.5s;
+}
+
+@media (max-width: 767px) {
+    .fa,.fc,.fb{
+        font-size: 1.3em; 
+    }
+}
