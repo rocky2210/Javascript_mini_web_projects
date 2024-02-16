@@ -28,7 +28,7 @@ flipButton.addEventListener("click",function(){
         tails++
     }
 
-    setTimeout(updateStats, 2000);
+    setTimeout(updateStats, 3000);
     disableButton();
     playFlipSound();
 });
