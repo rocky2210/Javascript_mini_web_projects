@@ -14,15 +14,16 @@ function playFlipSound() {
 flipButton.addEventListener("click",function(){
     let i = Math.floor(Math.random() * 2);
     coin.style.animation = "none";
+    console.log("Random number : ",i);
 
     if(i){
         setTimeout(function(){
-            coin.style.animation = "spin-heads 2s forwards";
+            coin.style.animation = "spin-heads 3s forwards";
         },100);
         heads++;
     }else{
         setTimeout(function(){
-            coin.style.animation = "spin-tails 2s forwards";
+            coin.style.animation = "spin-tails 3s forwards";
         },100);
         tails++
     }
