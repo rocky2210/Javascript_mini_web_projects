@@ -69,7 +69,7 @@ navigator.getBattery().then(function(battery){
             batteryGradient = "var(--gradient-color-green)";
         }
 
-        charge.style.width = batteryLevel + "%";
+        charge.style.width = batteryLevel - 6 + "%";
         charge.style.background = batteryGradient;
         chargeLevel.textContent = batteryLevel + "%";
     }
