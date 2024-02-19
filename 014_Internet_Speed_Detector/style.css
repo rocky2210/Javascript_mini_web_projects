@@ -2,17 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  .container_Custom {
-    width: 350px;
-    position: absolute;
-    border-radius: 0.5em;
-    font-size: 1.2em;
-    line-height: 2.2em;
-  }
-  p {
-    font-size: 400;
-    letter-spacing: 0.02em;
+}
+    p {
+    font-size: 400 !important;
+    letter-spacing: 0.02em !important;
   }
   span {
     font-weight: 500;
