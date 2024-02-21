@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alarm Clock</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="vh-100  d-flex justify-content-center align-items-center">
+    <!-- Set alarm -->
+    <main>
+        <div class="container rounded ">
+            <div class="clock text-center">
+                
+                <!-- Heading -->
+                <h1 class="text-danger fw-bold mb-4">Alarm Clock</h1>
+                <hr>
+                
+                <!-- Clock -->
+                <div class="time rounded-4 bg-dark py-2 text-primary mb-3 fw-bold" id="time">00:00:00</div>
+                
+                <div class="input-row align-items-center d-flex flex-column">
+                    
+                    <div class="input-field ">
+                        <label for="alarmDate" class="label__option">Select Date</label>
+                        <input type="date" id="alarmDate" class="alarm__input" min="">
+                    </div>
+                    
+                    <div class="input-field">
+                        <label for="alarmTime" class="label__option">Select Time:</label>
+                        <input type="time" id="alarmTime" class="alarm__input">
+                    </div>
+                
+                </div>
+                
+                <button class="mt-4 justify-content-center align-items-center btn btn-primary" id="setAlarm">Set Alarm <i class="bi bi-alarm fw-bold"></i></button>
+
+            </div>
+            <div class="alarms" id="alarms"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
