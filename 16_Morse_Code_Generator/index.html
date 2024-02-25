@@ -12,22 +12,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
-<body class="">
+<body>
     <!-- Main -->
     <main>
-        <div class="container__custom rounded">
-            <h1 class="text-center text-warning">Morse Code Translater</h1>
-            <label for="input" class="mt-5 mb-2">Enter Text or Morse Code:</label>
+        <div class="container__custom rounded ">
+            <h1 class="text-center text-warning">Morse Code Translater</h1><hr>
+            <label for="input" class="mt-3 mb-2">Enter Text or Morse Code:</label>
             <textarea name="" id="input" rows="4" class="bg-dark text-white"></textarea>
 
             <!-- Button -->
-            <div class="btn-container">
+            <div class="btn__container">
                 <button id="translate" class="btn btn-primary px-4 mt-3">Translate</button>
             </div>
             <!-- <p>Translation:  <span class="text-primary" id="output"></span></p> -->
-            <h4>Output:</h4>
-            <label for="output" id="output"></label>
+            <div class="output__container">
+                <h6>Output:</h6>
+                <input type="text" id="output" class="bg-dark text-white" readonly>
+                <button id="copyButton" class="btn"><i class="bi bi-clipboard2-fill text-primary-emphasis"></i></button>
+            </div>
         </div>
     </main>
 
