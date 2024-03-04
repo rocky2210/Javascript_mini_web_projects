@@ -74,7 +74,7 @@ function checkAnswer() {
       if (lives === 0) {
         gameOver();
       } else {
-        document.getElementById('error-msg').innerHTML = `Incorrect answer, try again!`;
+        document.getElementById('error-msg').innerHTML = `Incorrect answer, try again! <br>  Correct answer is : ${answer}`;
       }
     }
   }
