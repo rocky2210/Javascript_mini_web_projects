@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+body{
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card{
+  margin-top: 50px;
+}
+
+.card-body{
+  padding: 20px !important;
+}
+
+.timer__points{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#question{
+  font-size: 24px;
+}
+
+#timer, #points, #lives, #error-msg, #submit-btn, #result{
+  display: none;
+}
+
+#restart-btn{
+  margin-top: 10px !important;
+}
+
+.modal-content {
+  padding: 20px !important;
+  border-radius: 8px !important;
+}
+
+.close {
+  color: #aaa;
+  float: right !important;
+  font-size: 28px !important;
+  font-weight: bold !important;
+}
+
+.close:hover,
+.close:focus {
+  color: black !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+#start-btn{
+  margin-top: 100px !important;
+  /* display: block; */
+  width: 250px !important;
+}
+
+#submit-btn{
+  width: 250px !important;
+}
+
+#question-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#question {
+  margin-right: 5px; 
+}
+
+#result {
+  width: 150px; 
+}
+
+#result:focus{
+  outline: none !important;
+}
+
+.stats-container{
+  padding: 5px;
+  margin-bottom: 10px !important;
+}
+
+.card-body{
+  padding: 0px;
+}
