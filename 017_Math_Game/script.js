@@ -19,8 +19,8 @@ function getRandomOperator() {
 
 // Function to generate a new question
 function generateQuestion() {
-  num1 = getRandomInt(1, 10);
-  num2 = getRandomInt(1, 10);
+  num1 = getRandomInt(1, 99);
+  num2 = getRandomInt(1, 99);
   operator = getRandomOperator();
   // Display the question
   document.getElementById('question').innerHTML = `${num1} ${operator} ${num2} = `;
