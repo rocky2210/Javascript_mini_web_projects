@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main -->
+    <div class="container center__form">
+        <div class="row justify-content-center ">
+            <div class="col-md-8 main__box">
+                <h3 class="mt-4 text-center  text-danger">Text-to-Speech Converter</h3><hr>
+
+                <!-- Form groups -->
+                <div class="form-group">
+                    <label for="text-to-convert" class="fw-bold text-warning">Enter text:</label>
+                    <textarea name="" id="text-to-convert" rows="5" placeholder="Enter text here...."></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="voice-select" class="text-info fw-bold">Select Voice:</label>
+                    <select name="" id="voice-select" class="form-control"></select>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-4 mb-4 center-buttons">
+                    <button class="btn btn-primary px-4" onclick="convertToSpeech()">Convert</button>
+                    <button class="btn btn-danger px-4" onclick="stopSpeaking()">Stop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
