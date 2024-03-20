@@ -1,0 +1,52 @@
+.head__color{
+    color: #79dfc1 !important;
+}
+
+.button__download{
+    background-color: #ea868f !important;
+    color: black !important;
+}
+
+.container{
+   /* height: 100vh !important; */
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+input[type="text"]{
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    outline: none;
+}
+
+button{
+    padding: 8px 13px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+#qrcode{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px !important;
+}
+
+.card-footer button{
+    justify-content: space-between !important;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .card{
+        width: 90% !important;
+    }
+}
+
+/* Media query for medium devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .card{
+        width: 90% !important;
+    }
+}
+
